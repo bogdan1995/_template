@@ -1,3 +1,78 @@
 // =======================
 // Layout/Navigation
 // =======================
+
+.nav {
+  position: fixed;
+  top: -114px;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: 'open_sanssemibold';
+  font-size: 18px;
+  color: #fff;
+  line-height: 2;
+  background: $dark-blue;
+  opacity: .55;
+  text-align: center;
+}
+
+.show {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+
+.show-menu {
+  display: block;
+  height: 4px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: $white;
+  box-shadow: 0px -8.88889px 0px 0px $white, 0px 8.88889px 0px 0px $white;
+}
+
+@media only screen and (min-width: 768px),
+only screen and (min-width: 400px) and (orientation: landscape) {
+  .show {
+    display: none;
+  }
+  .nav {
+    @include textCenterAbs();
+    background: none;
+    &__menu {
+      text-align: center;
+      margin-left: -16%;
+      &-item {
+        display: inline-block;
+        margin-left: 16%;
+        text-align: center;
+      }
+      &-link {
+        transition: padding-bottom .3s ease-in-out;
+        &:hover {
+          padding-bottom: 3px;
+          border-radius: 3px;
+          border-bottom: 3px solid $white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav {
+    width: 960px;
+  }
+  .nav__menu {
+    text-align: right;
+    margin-left: -5%;
+    &-item {
+      margin-left: 5%;
+    }
+  }
+}

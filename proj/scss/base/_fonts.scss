@@ -1,3 +1,47 @@
 // =======================
 // Base/Fonts
 // =======================
+
+@font-face {
+  font-family: 'helveticaneuecyrultralight';
+  src: url('/fonts/Helvetica Neue Cyr Ultra Light-webfont.eot');
+  src: url('/fonts/Helvetica Neue Cyr Ultra Light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Helvetica Neue Cyr Ultra Light-webfont.woff2') format('woff2'),
+  url('/fonts/Helvetica Neue Cyr Ultra Light-webfont.woff') format('woff'),
+  url('/fonts/Helvetica Neue Cyr Ultra Light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('/fonts/Open Sans Bold-webfont.eot');
+  src: url('/fonts/Open Sans Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Open Sans Bold-webfont.woff2') format('woff2'),
+  url('/fonts/Open Sans Bold-webfont.woff') format('woff'),
+  url('/fonts/Open Sans Bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('/fonts/Open Sans Regular-webfont.eot');
+  src: url('/fonts/Open Sans Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Open Sans Regular-webfont.woff2') format('woff2'),
+  url('/fonts/Open Sans Regular-webfont.woff') format('woff'),
+  url('/fonts/Open Sans Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('/fonts/Open Sans Semibold-webfont.eot');
+  src: url('/fonts/Open Sans Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Open Sans Semibold-webfont.woff2') format('woff2'),
+  url('/fonts/Open Sans Semibold-webfont.woff') format('woff'),
+  url('/fonts/Open Sans Semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

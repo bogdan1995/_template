@@ -4,9 +4,12 @@
 
 /* Font variables */
 
-$main-font: Arial, sans-serif;
+$main-font:  'open_sansbold', Arial, sans-serif;
 
 /* Color variables */
 
-$color-link: #eee;
+$color-link: #fff;
 $color-link-hover: lighten($color-link, 40%);
+
+$dark-blue: #34444f;
+$white: #fff;

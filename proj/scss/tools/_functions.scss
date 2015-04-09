@@ -11,3 +11,11 @@
 @function emtopx($target, $context){
     @return ($target*$context)+0px;
 }
+
+@mixin textCenterAbs () {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
