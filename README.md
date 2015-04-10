@@ -29,16 +29,16 @@
 ```
 
 ### Gulp tasks
-`connect` - the creation of a local server and run livereload
-`css` - compiling SCSS files and add-vendor prefixes
-`jade` - compiling JADE files
-`uncss` - remove unused styles (if you want to use this plugin, uncomment the task in gulp config)
-`jshint` - Check for errors your js-scripts 
-`wiredep` - add the path to the styles and scripts downloaded from the bower
-`build` - prepares an application to the production: minify and concatenate styles and scripts in the index file adds the path to these files (all located in the folder `dist`)
-clean - remove folder `dist`
-watch - monitors changes to files
-default - starts a tasks `watch` and `connect`
+* `connect` - the creation of a local server and run livereload
+* `css` - compiling SCSS files and add-vendor prefixes
+* `jade` - compiling JADE files
+* `uncss` - remove unused styles (if you want to use this plugin, uncomment the task in gulp config)
+* `jshint` - Check for errors your js-scripts 
+* `wiredep` - add the path to the styles and scripts downloaded from the bower
+*`build` - prepares an application to the production: minify and concatenate styles and scripts in the index file adds the path to these files (all located in the folder `dist`)
+* `clean` - remove folder `dist`
+* `watch `- monitors changes to files
+* `default` - starts a tasks `watch` and `connect`
 
 
 ### How it works?
