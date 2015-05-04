@@ -19,3 +19,52 @@
   margin: auto;
   position: absolute;
 }
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+
+// Functions and Directives
+
+@function em($target, $contex: $base__font-size) {
+  @return ($target/$contex) * 1em;
+}
+
+// Call the color pallete modifiers
+
+@function palette ($palette, $shade: 'base') {
+  @return map-get(map-get($pallets, $palette), $shade);
+}
+
+
+// Mixins
+
+@mixin bg-colors ($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+@mixin img-replace($img, $width, $height, $disp: block) {
+  background: url('#{$path--rel}/#{$img}') no-repeat;;
+  width: $width;
+  height: $height;
+  display: $disp;
+}
+
+@mixin p-el ($el, $el-width: null, $el-height: null) {
+  @if $el == "before" or $el == "after" {
+    &:#{$el} {
+      @extend %pseudos;
+      width: $el-width;
+      height: $el-height;
+      @content;
+    }
+  } @else {
+    @error " #{$el} is not vaild pseudo element";
+  }
+}
