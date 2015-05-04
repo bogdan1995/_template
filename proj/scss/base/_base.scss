@@ -18,10 +18,18 @@ a {
 }
 
 body {
-    font-family: $main-font;
+    font-family: $font-family--primary;
     font-weight: 300;
     font-size: 1em;
     line-height: 1.5;
+}
+
+
+a {
+    text-decoration: none;
+    &:hover {
+
+    }
 }
 
 hr {
